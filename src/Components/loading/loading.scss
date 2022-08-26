@@ -1,0 +1,55 @@
+.demo-container {
+    margin: auto;
+    height: 144px;
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  
+    .title {
+      width: 100px;
+      height: 27px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: -0.035em;
+      color: #4F4F4F;
+      margin-top: 10px;
+      margin-left: 28px;
+    }
+  
+    .progress-bar {
+      height: 6px;
+      background-color: rgba(5, 114, 206, 0.2);
+      width: 340px;
+      overflow: hidden;
+      background: #F2F2F2;
+      border-radius: 8px;
+      margin: auto;
+    }
+  
+    .progress-bar-value {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(5, 114, 206);
+      animation: indeterminateAnimation 1s infinite linear;
+      transform-origin: 0% 50%;
+    }
+  
+    @keyframes indeterminateAnimation {
+      0% {
+        transform:  translateX(0) scaleX(0);
+      }
+      40% {
+        transform:  translateX(0) scaleX(0.4);
+      }
+      100% {
+        transform:  translateX(100%) scaleX(0.5);
+      }
+    }
+  }
